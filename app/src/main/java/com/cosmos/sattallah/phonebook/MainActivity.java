@@ -58,13 +58,13 @@ public class MainActivity extends AppCompatActivity {
                 layoutView = getLayoutInflater().inflate(R.layout.contact_list_item, parent, false);
             }
             TextView tvName = (TextView) layoutView.findViewById(R.id.name_textView);
-            TextView tvjobDescription = (TextView) layoutView.findViewById(R.id.jobDescription_textView);
+            TextView tvJobDescription = (TextView) layoutView.findViewById(R.id.jobDescription_textView);
             TextView tvPhone = (TextView) layoutView.findViewById(R.id.phone_textView);
 
             ContactHolder contactHolder = contactHolderArrayList.get(position);
 
             tvName.setText(contactHolder.name);
-            tvjobDescription.setText(contactHolder.jobDescription);
+            tvJobDescription.setText(contactHolder.jobDescription);
             tvPhone.setText(contactHolder.phone);
             return layoutView;
         }
